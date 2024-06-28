@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logoTorsi from '@/images/logotorsiev.png'
+import logoTorsi from '@/images/logotorsiev-stroked.png'
 
 export default function Navbar(){
     return (
@@ -11,17 +11,8 @@ export default function Navbar(){
             <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
                 <li><a>Link</a></li>
-                <li>
-                <details>
-                    <summary>
-                    Parent
-                    </summary>
-                    <ul className="p-2 bg-base-100 rounded-t-none">
-                    <li><a>Link 1</a></li>
-                    <li><a>Link 2</a></li>
-                    </ul>
-                </details>
-                </li>
+                <li><a>Partner</a></li>
+                <li><a>Products</a></li>
                 <li><button className="bg-primary text-white">Login</button></li>
             </ul>
             </div>

@@ -1,12 +1,14 @@
 import React from "react";
+import Image from "next/image";
+import CS1 from "../images/CS-1.jpg"
 
 export default function Hero() {
     return (
-      <div className="hero min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 text-black">
+      <div className="hero min-h-screen bg-gradient-to-r from-olblue to-torque text-black">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="carousel w-full lg:w-1/2 rounded-box">
             <div id="slide1" className="carousel-item relative w-full">
-              <img src="https://via.placeholder.com/800x400" className="w-full" alt="Slide 1" />
+              <Image className="w-800 h-400" src={ CS1} alt="Slide 1" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">❮</a> 
                 <a href="#slide2" className="btn btn-circle">❯</a>
