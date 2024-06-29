@@ -16,7 +16,9 @@ const config: Config = {
       colors: {
         "olblue" : "#315f90",
         "torque" : "#328D8F",
-        "tosca"  : "#328F62"
+        "tosca"  : "#328F62",
+        "ored"   : "#952323",
+        "lred"   : "#A73121"
       }
     },
   },

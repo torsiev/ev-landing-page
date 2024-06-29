@@ -1,3 +1,5 @@
+'use client'
+
 // import Image from "next/image";
 
 import Hero from "@/Pages/hero";
@@ -6,7 +8,7 @@ import Partner from "@/Pages/partner";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white">
+    <main className="flex min-h-screen flex-col items-center bg-white">
       <Navbar />
       <Hero />
       <Partner />
