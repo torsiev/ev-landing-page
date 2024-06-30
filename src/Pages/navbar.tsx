@@ -22,16 +22,16 @@ export default function Navbar(){
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
     return (
-        <div className="navbar bg-transparent fixed">
+        <div>
             <header
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-white text-primary-foreground shadow-lg text-black" : "bg-transparent text-white"
+          isScrolled ? "bg-ored text-primary-foreground shadow-lg" : "bg-gradient-to-r from-ored to-lred text-white"
         }`}
       >
-        <div className="container flex items-center justify-between px-4 py-4 md:px-6">
+        <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
           <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
             <Image className="w-32" src={logoTorsi} alt="logo" />
-            <span className="sr-only">Acme Inc</span>
+            <span className="sr-only">Torsi EV</span>
           </Link>
           <nav className={`flex flex-col gap-6 text-lg font-medium md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
             <Link href="#" className="font-bold" prefetch={false}>
@@ -48,7 +48,7 @@ export default function Navbar(){
             </Link>
           </nav>
           <div className="flex items-center gap-4 md:hidden">
-            <Button size="small" className="rounded-full text-black" onClick={() => setIsMenuOpen(!isMenuOpen)} onScroll={() => setIsScrolled}>
+            <Button size="small" className="rounded-full text-white" onClick={() => setIsMenuOpen(!isMenuOpen)} onScroll={() => setIsScrolled}>
               <MenuIcon className="h-6 w-6" />
               <span className="sr-only">Toggle navigation</span>
             </Button>
@@ -66,9 +66,15 @@ export default function Navbar(){
             <Link href="#" className="text-muted-foreground" prefetch={false}>
               Contact
             </Link>
+            <button className="btn btn-primary bg-primary text-white">Get Started</button>
           </nav>
+          
         </div>
+        
       </header>
+      <section>
+        
+      </section>
         </div>
     )
 }
@@ -92,4 +98,23 @@ function MenuIcon(props: any) {
             <line x1="4" x2="20" y1="18" y2="18" />
         </svg>
     )
+}
+
+function MountainIcon(props: any) {
+  return (
+    <svg  
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+    </svg>
+  )
 }

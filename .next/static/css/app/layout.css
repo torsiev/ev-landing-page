@@ -970,17 +970,6 @@ html {
   gap: 1rem;
   padding: 1rem;
 }
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: var(--navbar-padding, 0.5rem);
-  min-height: 4rem;
-  width: 100%;
-}
-:where(.navbar > *:not(script, style)) {
-  display: inline-flex;
-  align-items: center;
-}
 @media (prefers-reduced-motion: no-preference) {
 
   .btn {
@@ -1226,6 +1215,10 @@ html {
 .z-50 {
   z-index: 50;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .block {
   display: block;
 }
@@ -1241,14 +1234,11 @@ html {
 .h-6 {
   height: 1.5rem;
 }
-.h-32 {
-  height: 8rem;
-}
-.h-12 {
-  height: 3rem;
-}
 .min-h-screen {
   min-height: 100vh;
+}
+.w-32 {
+  width: 8rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -1258,12 +1248,6 @@ html {
 }
 .w-full {
   width: 100%;
-}
-.w-32 {
-  width: 8rem;
-}
-.w-12 {
-  width: 3rem;
 }
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
@@ -1281,23 +1265,29 @@ html {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-center {
   justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
 }
+.justify-items-center {
+  justify-items: center;
+}
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .gap-6 {
   gap: 1.5rem;
 }
 .gap-7 {
   gap: 1.75rem;
-}
-.gap-4 {
-  gap: 1rem;
 }
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1310,13 +1300,9 @@ html {
 .rounded-full {
   border-radius: 9999px;
 }
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.bg-primary {
+.bg-ored {
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+  background-color: rgb(149 35 35 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -1324,6 +1310,10 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));

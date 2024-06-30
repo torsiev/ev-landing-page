@@ -8,7 +8,7 @@ import Partner from "@/Pages/partner";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
       <Navbar />
       <Hero />
       <Partner />
