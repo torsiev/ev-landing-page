@@ -25,15 +25,15 @@ export default function Navbar(){
         <div>
             <header
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-ored text-primary-foreground shadow-lg" : "bg-gradient-to-r from-ored to-lred text-white"
+          isScrolled ? "bg-white text-black shadow-lg" : "bg-white text-black"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
-          <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
+          <Link href="#" className="flex items-start gap-2 text-lg font-semibold" prefetch={false}>
             <Image className="w-32" src={logoTorsi} alt="logo" />
             <span className="sr-only">Torsi EV</span>
           </Link>
-          <nav className={`flex flex-col gap-6 text-lg font-medium md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
+          <nav className={`flex flex-col gap-0 text-lg font-medium md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
             <Link href="#" className="font-bold" prefetch={false}>
               Home
             </Link>
@@ -48,12 +48,12 @@ export default function Navbar(){
             </Link>
           </nav>
           <div className="flex items-center gap-4 md:hidden">
-            <Button size="small" className="rounded-full text-white" onClick={() => setIsMenuOpen(!isMenuOpen)} onScroll={() => setIsScrolled}>
+            <Button size="small" className="rounded-full text-black" onClick={() => setIsMenuOpen(!isMenuOpen)} onScroll={() => setIsScrolled}>
               <MenuIcon className="h-6 w-6" />
               <span className="sr-only">Toggle navigation</span>
             </Button>
           </div>
-          <nav className="hidden gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+          <nav className="hidden gap-0 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link href="#" className="font-bold" prefetch={false}>
               Home
             </Link>
