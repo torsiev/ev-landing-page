@@ -53,21 +53,26 @@ export default function Navbar(){
               <span className="sr-only">Toggle navigation</span>
             </Button>
           </div>
-          <nav className="hidden gap-0 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-            <Link href="#" className="font-bold" prefetch={false}>
-              Home
-            </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
-              About
-            </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
-              Services
-            </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
-              Contact
-            </Link>
-            <button className="btn btn-primary bg-primary text-white">Get Started</button>
-          </nav>
+          <div className="navbar-center">
+            <nav className="hidden gap-0 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+              <Link href="#" className="font-bold" prefetch={false}>
+                Home
+              </Link>
+              <Link href="#" className="text-muted-foreground" prefetch={false}>
+                About
+              </Link>
+              <Link href="#" className="text-muted-foreground" prefetch={false}>
+                Services
+              </Link>
+              <Link href="#" className="text-muted-foreground" prefetch={false}>
+                Contact
+              </Link>
+              
+            </nav>
+            
+          </div>
+          <button className="btn bg-sky-400 border-transparent text-white">Get Started</button>
+          
           
         </div>
         
