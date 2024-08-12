@@ -18,7 +18,8 @@ const config: Config = {
         "torque" : "#328D8F",
         "tosca"  : "#328F62",
         "ored"   : "#952323",
-        "lred"   : "#A73121"
+        "lred"   : "#A73121",
+        "whSky"  : "#EEF5FF"
       }
     },
   },

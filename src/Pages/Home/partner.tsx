@@ -5,14 +5,18 @@ import volta from "@/images/volta-light.png"
 import dms   from "@/images/dms.png" 
 import telyu from "@/images/telyu.png"
 import abe   from "@/images/ABELogoWebsiteTransparent.png"
+import left from "../../images/line-left.png"
+import right from "../../images/line-right.png"
 
 export default function Partner() {
     return (
         <section className="min-w-screen py-6 md:py-24 lg:py-24">
             <div className="container grid items-center py-4 justify-center text-center">
-                <div className="space-y-3 justify-center">
-                    <h2 className="text-3xl text-black font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Partners</h2>
-                </div>
+            <div className="flex flex-row gap-10 justify-center">
+                <Image className="h-min mt-3" src={left} alt="line-left" />
+                <h1 className="text-5xl font-bold text-sky-500 text-center">About</h1>
+                <Image className="h-min mt-3" src={right} alt="line-right" />
+            </div>
                 <div className="grid w-full grid-cols-4 items-center justify-center gap-7 py-9">
                     <Link href="https://telkomuniversity.ac.id" target="_blank">
                         <Image className="w-72" src={telyu} alt="logoitelyu"/>
