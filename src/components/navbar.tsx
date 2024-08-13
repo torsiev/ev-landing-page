@@ -5,6 +5,7 @@ import logoTorsi from '@/images/logotorsiev-stroked.png'
 import {useState, useEffect} from "react"
 import Link from "next/link";
 import { Button } from "@mui/material";
+import servicePage from "@/Pages/Services";
 // import { ClassNames } from "@emotion/react";
 
 export default function Navbar(){
@@ -37,10 +38,10 @@ export default function Navbar(){
             <Link href="#" className="font-bold" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
+            <Link href="/about" className="text-muted-foreground" prefetch={false}>
               About
             </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
+            <Link href="/about" className="text-muted-foreground" prefetch={false}>
               Services
             </Link>
             <Link href="#" className="text-muted-foreground" prefetch={false}>

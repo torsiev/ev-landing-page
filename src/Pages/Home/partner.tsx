@@ -14,7 +14,7 @@ export default function Partner() {
             <div className="container grid items-center py-4 justify-center text-center">
             <div className="flex flex-row gap-10 justify-center">
                 <Image className="h-min mt-3" src={left} alt="line-left" />
-                <h1 className="text-5xl font-bold text-sky-500 text-center">About</h1>
+                <h1 className="text-5xl font-bold text-sky-500 text-center">Partners</h1>
                 <Image className="h-min mt-3" src={right} alt="line-right" />
             </div>
                 <div className="grid w-full grid-cols-4 items-center justify-center gap-7 py-9">
