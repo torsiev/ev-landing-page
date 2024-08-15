@@ -17,7 +17,7 @@ export default function Partner() {
                 <h1 className="text-5xl font-bold text-sky-500 text-center">Partners</h1>
                 <Image className="h-min mt-3" src={right} alt="line-right" />
             </div>
-                <div className="grid grid-cols-4 items-center justify-center gap-7 py-9 bg-white">
+                <div className="flex flex-row items-center justify-center gap-5 py-9 bg-white w-screen">
                     <Link href="https://telkomuniversity.ac.id" target="_blank">
                         <Image className="w-72" src={telyu} alt="logoitelyu"/>
                     </Link>
