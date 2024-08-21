@@ -3,7 +3,7 @@ import Image from "next/image";
 import CS1 from "../images/CS-1.jpg"
 // import stroom from "../images/stroom.jpg"
 import konversi from "../images/konversi.jpg"
-import str2 from "@/images/Str-2.jpg"
+import str2 from "../../images/Str-2-min.jpg"
 
 export default function Hero() {
     return (
