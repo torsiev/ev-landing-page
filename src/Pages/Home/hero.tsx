@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import CS1 from "../images/CS-1.jpg"
-// import stroom from "../images/stroom.jpg"
-import konversi from "../images/konversi.jpg"
-import str2 from "../../images/Str-2-min.jpg"
+import CS1 from "../images/CS-1.png"
+// import stroom from "../images/stroom.png"
+import konversi from "../images/konversi.png"
+import str2 from "../../images/Str-2-min.png"
 
 export default function Hero() {
     return (
       <div className="hero min-h-screen">
         <Image className="h-screen" src={str2} alt="background" />
+        
         <div className="hero-overlay bg-opacity-70"></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-5xl">
