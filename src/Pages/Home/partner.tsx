@@ -5,8 +5,8 @@ import volta from "@/images/volta-light.png"
 import dms   from "@/images/dms.png" 
 import telyu from "@/images/telyu.png"
 import abe   from "@/images/ABELogoWebsiteTransparent.png"
-import left from "../../images/line-left.png"
-import right from "../../images/line-right.png"
+import left from "@/images/line-left.png"
+import right from "@/images/line-right.png"
 
 export default function Partner() {
     return (

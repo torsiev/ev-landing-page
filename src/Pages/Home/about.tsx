@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import konversi from "../../images/konversi.jpg"
-import left from "../../images/line-left.png"
-import right from "../../images/line-right.png"
+import konversi from "@/images/konversi.jpg"
+import left from "@/images/line-left.png"
+import right from "@/images/line-right.png"
 
 export default function About() {
     return (

@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import charging from "../../images/charging.jpg"
-import left from "../../images/line-left.png"
-import right from "../../images/line-right.png"
-import ice from "../../images/Str-4.jpg"
-import stroom from "../../images/Str-1.jpg"
+import charging from "@/images/charging.jpg"
+import left from "@/images/line-left.png"
+import right from "@/images/line-right.png"
+import ice from "@/images/Str-4.jpg"
+import stroom from "@/images/Str-1.jpg"
 
 export default function Services() {
     return (
