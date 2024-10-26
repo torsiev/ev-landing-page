@@ -1,7 +1,8 @@
 // "use client"
 import React from "react";
 import Image from "next/image";
-import logoTorsi from '@/images/logotorsiev-stroked.png'
+// import logoTorsi from '@/images/logotorsiev-stroked.png'
+import logoTorsi from '@/images/logotorsiev.png'
 import {useState, useEffect} from "react"
 import Link from "next/link";
 import { Button } from "@mui/material";
@@ -26,7 +27,7 @@ export default function Navbar(){
         <div>
             <header
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-white text-black shadow-lg" : "bg-white text-black"
+          isScrolled ? "bg-white text-black shadow-lg" : "navbar-layer bg-white bg-opacity-50 text-black"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
@@ -72,7 +73,7 @@ export default function Navbar(){
             </nav>
             
           </div>
-          <button className="btn bg-sky-500 border-transparent text-white hover:bg-sky-600 hover:border-none">Get Started</button>
+          <button className="btn bg-sky-500 border-none text-white hover:bg-sky-600 hover:border-none">Get Started</button>
           
           
         </div>

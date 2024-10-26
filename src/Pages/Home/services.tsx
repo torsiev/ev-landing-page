@@ -19,7 +19,6 @@ export default function Services() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-5 place-items-center">
-
         <div className="card bg-white w-full shadow-xl text-black">
           <figure className="px-5 pt-5">
             <Image className="rounded" src={charging} alt="charging" />
@@ -33,8 +32,22 @@ export default function Services() {
               dicta sunt explicabo.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white hover:border-none ">
-                Read More
+              <button className="btn btn-sm w-32 h-10 bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white hover:border-none ">
+                See More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -53,8 +66,22 @@ export default function Services() {
               dicta sunt explicabo.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:border-none hover:text-white">
-                Read More
+              <button className="btn btn-sm w-32 h-10 bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:border-none hover:text-white">
+                See More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -72,9 +99,22 @@ export default function Services() {
               dicta sunt explicabo.
             </p>
             <div className="card-actions justify-end">
-              <button className="group btn bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:border-none hover:text-white">
-                Read More
-                {/* <Image className="" src={arrow} alt="arrow" /> */}
+              <button className="group btn btn-sm w-32 h-10 bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:border-none hover:text-white">
+                See More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
               </button>
             </div>
           </div>
