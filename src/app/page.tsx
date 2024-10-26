@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar";
 import Partner from "@/Pages/Home/partner";
 import About from "@/Pages/Home/about";
 import Services from "@/Pages/Home/services";
+import Contact from "@/Pages/Home/contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Services />
       <Partner />
+      <Contact />
     </main>
   );
 }

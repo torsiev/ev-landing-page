@@ -72,7 +72,7 @@ export default function Navbar(){
             </nav>
             
           </div>
-          <button className="btn bg-sky-400 border-transparent text-white">Get Started</button>
+          <button className="btn bg-sky-500 border-transparent text-white hover:bg-sky-600 hover:border-none">Get Started</button>
           
           
         </div>
