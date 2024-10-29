@@ -6,7 +6,7 @@ import logoTorsi from "@/images/logotorsiev.png";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@mui/material";
-import servicePage from "@/Pages/Services";
+import servicePage from "@/pages/Services";
 // import { ClassNames } from "@emotion/react";
 
 export default function Navbar() {
