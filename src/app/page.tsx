@@ -8,6 +8,7 @@ import Partner from "@/Pages/Home/partner";
 import About from "@/Pages/Home/about";
 import Services from "@/Pages/Home/services";
 import Contact from "@/Pages/Home/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Partner />
       <Contact />
+      <Footer />
     </main>
   );
 }

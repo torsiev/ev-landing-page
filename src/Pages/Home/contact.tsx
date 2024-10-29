@@ -5,7 +5,7 @@ import right from "@/images/right-1.svg";
 
 export default function Contact() {
   return (
-    <div className="container mx-auto max-w-screen-lg my-auto px-4">
+    <div className="container mx-auto max-w-screen-lg my-auto px-4 mb-5">
       <div className="flex flex-row gap-10 justify-center mb-5 items-center">
         <Image className="h-2 md:h-10 mt-5" src={left} alt="line-left" />
         <h1 className="text-2xl md:text-3xl mt-5 font-bold text-sky-500 text-center">
@@ -18,10 +18,11 @@ export default function Contact() {
       <div className="flex flex-col lg:flex-row lg:gap-5 justify-center items-center">
         
         {/* Kartu Alamat */}
-        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start">
+        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start hover:bg-slate-50">
+          <a href="https://maps.app.goo.gl/o5rGZGF2Pwg75DuR6">
           <figure className="p-5">
             <div className="flex flex-row items-start">
-              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-600 hover:border-none">
+              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -40,13 +41,14 @@ export default function Contact() {
               </div>
             </div>
           </figure>
+          </a>
         </div>
 
         {/* Kartu Telepon */}
-        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start">
+        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start hover:bg-slate-50">
           <figure className="p-5">
             <div className="flex flex-row items-start">
-              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-600 hover:border-none">
+              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -67,10 +69,10 @@ export default function Contact() {
         </div>
 
         {/* Kartu Email */}
-        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start">
+        <div className="card bg-white w-[100%] lg:w-[30%] shadow-xl text-black mb-5 items-start hover:bg-slate-50">
           <figure className="p-5">
             <div className="flex flex-row items-start">
-              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-600 hover:border-none">
+              <button className="btn btn-circle mr-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
