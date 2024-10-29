@@ -1,10 +1,10 @@
 import React from "react";
 import DefaultLayout from "@/layouts/DefaultLayout";
-import Hero from "@/sections/Hero";
-import Partner from "@/sections/Partner";
-import About from "@/sections/About";
-import Services from "@/sections/Services";
-import Contact from "@/sections/Contact";
+import Hero from "@/sections/Index/Hero";
+import Partner from "@/sections/Index/Partner";
+import About from "@/sections/Index/About";
+import Services from "@/sections/Index/Services";
+import Contact from "@/sections/Index/Contact";
 
 export default function Home() {
   return (

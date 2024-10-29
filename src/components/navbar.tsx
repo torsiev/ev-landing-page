@@ -1,13 +1,9 @@
-// "use client"
 import React from "react";
 import Image from "next/image";
-// import logoTorsi from '@/images/logotorsiev-stroked.png'
 import logoTorsi from "@/images/logotorsiev.png";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@mui/material";
-import servicePage from "@/pages/Services";
-// import { ClassNames } from "@emotion/react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +55,7 @@ export default function Navbar() {
               isMenuOpen ? "block" : "hidden"
             }`}
           >
-            <Link href="#" className="font-bold" prefetch={false}>
+            <Link href="/" className="font-bold" prefetch={false}>
               Home
             </Link>
             <Link
@@ -70,7 +66,7 @@ export default function Navbar() {
               About
             </Link>
             <Link
-              href="/Services"
+              href="/services"
               className="text-muted-foreground"
               prefetch={false}
             >
@@ -80,22 +76,19 @@ export default function Navbar() {
               Contact
             </Link>
           </nav>
-          {/* <div className="flex items-center gap-4 md:hidden">
-            <Button size="small" className="rounded-full text-black" onClick={() => setIsMenuOpen(!isMenuOpen)} onScroll={() => setIsScrolled}>
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Toggle navigation</span>
-            </Button>
-          </div> */}
-
           <div className="navbar-center">
             <nav className="hidden gap-0 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-              <Link href="#" className="font-bold" prefetch={false}>
+              <Link href="/" className="font-bold" prefetch={false}>
                 Home
               </Link>
               <Link href="#" className="text-muted-foreground" prefetch={false}>
                 About
               </Link>
-              <Link href="/Services" className="text-muted-foreground" prefetch={false}>
+              <Link
+                href="/services"
+                className="text-muted-foreground"
+                prefetch={false}
+              >
                 Services
               </Link>
               <Link href="#" className="text-muted-foreground" prefetch={false}>

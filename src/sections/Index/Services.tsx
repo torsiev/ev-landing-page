@@ -5,7 +5,6 @@ import left from "@/images/left-1.svg";
 import right from "@/images/right-1.svg";
 import ice from "@/images/Str-4.png";
 import stroom from "@/images/Str-1.png";
-import arrow from "@/images/arrow-button.svg";
 
 export default function Services() {
   return (
@@ -32,7 +31,7 @@ export default function Services() {
               dicta sunt explicabo.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn btn-sm w-32 h-10 bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white hover:border-none ">
+            <button className="group btn btn-sm w-32 h-10 bg-white border-sky-500 text-sky-500 hover:bg-sky-500 hover:border-none hover:text-white">
                 See More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

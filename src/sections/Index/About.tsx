@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import konversi from "@/images/konversi.png";
-// import left from "@/images/line-left.png"
-// import right from "@/images/line-right.png"
 import left from "@/images/left-1.svg";
 import right from "@/images/right-1.svg";
 

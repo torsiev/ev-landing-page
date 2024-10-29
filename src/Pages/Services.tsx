@@ -1,13 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import DefaultLayout from "@/layouts/DefaultLayout";
+import Services from "@/sections/Index/Services";
 
-export default function servicePage() {
-    return (
-        <main className="container">
-            <Navbar />
-            <Footer />
-        </main>
-    )
+export default function Service() {
+  return (
+    <DefaultLayout>
+     <p className="text-black">Hello World!</p>
+    </DefaultLayout>
+  );
 }

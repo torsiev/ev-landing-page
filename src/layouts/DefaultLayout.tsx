@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import BackTop from "@/components/backtop";
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,10 +10,11 @@ interface LayoutProps {
 const DefaultLayout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Navbar />
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-whSky overflow-x-hidden">
       {children}
     </main>
     <Footer />
+    <BackTop />
   </>
 );
 
