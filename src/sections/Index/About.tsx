@@ -39,7 +39,6 @@ export default function About() {
               alt="konversi"
             />
           </div>
-
           <div className="text-white text-justify bg-sky-500 p-10 md:p-20 lg:w-4/5">
             <div data-aos="fade-right">
               <div className="flex flex-row items-center lg:items-start">

@@ -1,7 +1,9 @@
 import React from "react";
 import DefaultLayout from "@/layouts/DefaultLayout";
-import Services from "@/sections/Index/Services";
-
+import Banner from "@/sections/Services/Banner";
+import Charging from "@/sections/Services/ChargingStation";
+import Conversion from "@/sections/Services/IceToEvConversion";
+import Stroom from "@/sections/Services/Stroom";
 
 declare global {
   interface Window {
@@ -12,7 +14,10 @@ declare global {
 export default function Service() {
   return (
     <DefaultLayout>
-     <p className="text-black">Hello World!</p>
+      <Banner />
+      <Charging />
+      <Conversion />
+      <Stroom />
     </DefaultLayout>
   );
 }

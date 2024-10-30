@@ -88,12 +88,12 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/services"
-                className="text-muted-foreground text-lg"
+                className="text-muted-foreground text-lg hover:text-sky-500"
                 prefetch={false}
               >
                 SERVICES
               </Link>
-              <Link href="#" className="text-muted-foreground text-lg" prefetch={false}>
+              <Link href="#" className="text-muted-foreground text-lg hover:text-sky-500" prefetch={false}>
                 CONTACT
               </Link>
             </nav>

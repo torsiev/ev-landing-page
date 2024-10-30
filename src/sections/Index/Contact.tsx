@@ -55,22 +55,15 @@ export default function Contact() {
                     <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
+                        width="2em"
+                        height="2em"
                         viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="size-6"
                       >
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                        />
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          d="M11.262 22.134S4 16.018 4 10a8 8 0 1 1 16 0c0 6.018-7.262 12.134-7.262 12.134c-.404.372-1.069.368-1.476 0M12 13.5a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"
+                        ></path>
                       </svg>
                     </button>
                     <div className="flex flex-col">
@@ -94,17 +87,14 @@ export default function Contact() {
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-6"
                     >
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                      />
+                        fill="currentColor"
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                      ></path>
                     </svg>
                   </button>
                   <div className="flex flex-col">
@@ -125,17 +115,15 @@ export default function Contact() {
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-6"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                      />
+                      <rect width="24" height="24" fill="none" />
+                      <g fill="currentColor">
+                        <path d="M22 7.535V17a3 3 0 0 1-2.824 2.995L19 20H5a3 3 0 0 1-2.995-2.824L2 17V7.535l9.445 6.297l.116.066a1 1 0 0 0 .878 0l.116-.066z" />
+                        <path d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a3 3 0 0 1 2.354-1.42L5 4z" />
+                      </g>
                     </svg>
                   </button>
                   <div className="flex flex-col">
