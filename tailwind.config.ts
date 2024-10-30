@@ -21,7 +21,8 @@ const config: Config = {
         "tosca"  : "#328F62",
         "ored"   : "#952323",
         "lred"   : "#A73121",
-        "whSky"  : "#EEF5FF"
+        "whSky"  : "#EEF5FF",
+        "whConfig" : "#F4F9FF"
       }
     },
   },

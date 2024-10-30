@@ -10,7 +10,7 @@ interface LayoutProps {
 const DefaultLayout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Navbar />
-    <main className="flex min-h-screen flex-col items-center justify-center bg-whSky overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-whConfig overflow-x-hidden">
       {children}
     </main>
     <Footer />

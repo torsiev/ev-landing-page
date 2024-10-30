@@ -1,62 +1,88 @@
-import React from "react";
 import Image from "next/image";
 import konversi from "@/images/konversi.png";
-import left from "@/images/left-1.svg";
-import right from "@/images/right-1.svg";
+import React, { useEffect } from "react";
+import Head from "next/head";
+
+declare global {
+  interface Window {
+    AOS: any;
+  }
+}
 
 export default function About() {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.AOS) {
+      window.AOS.init({
+        duration: 900,
+        once: false,
+      });
+    }
+  }, []);
+
   return (
-    <div className="container mx-auto max-w-screen-lg my-auto px-4">
-      <div className="mt-5 flex flex-row md:gap-10 justify-center mb-5 items-center">
-        <Image className="h-2 md:h-10 mt-5" src={left} alt="line-left" />
-        <h1 className="text-2xl md:text-3xl mt-5 font-bold text-sky-500 text-center">
-          About
-        </h1>
-        <Image className="h-2 md:h-10 mt-5" src={right} alt="line-right" />
-      </div>
-      <div className="flex flex-col lg:flex-row-reverse gap-5 lg:gap-32">
-        <Image
-          className="max-w-full rounded-md lg:max-w-md lg:rounded-md object-contain aspect-auto "
-          src={konversi}
-          alt="konversi"
+    <>
+      <Head>
+        {/* Tambahkan CSS dan JavaScript AOS dari CDN */}
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
         />
-        <div className="text-black text-justify">
-          <p>
-            Torsi EV berperan dalam mendukung terciptanya ekosistem Electric
-            Vehicle, dengan melakukan kegiatan yang berkaitan tidak terbatas
-            pada konversi, produksi, redesain, serta pembuatan perangkat
-            pendukung lainnya seperti charging station dan pembangunan aplikasi
-            pendukung. Kegiatan tersebut diwujudkan melalui penelitian,
-            diseminasi hasil penelitian kegiatan pengabdian kepada masyarakat
-            dan pengajaran, publikasi serta pendaftaran Hak Atas Kekayaan
-            Intelektual.
-          </p>
-          <p className="mt-5">
-            Kegiatan tersebut diwujudkan melalui penelitian, diseminasi hasil
-            penelitian kegiatan pengabdian kepada masyarakat dan pengajaran,
-            publikasi serta pendaftaran Hak Atas Kekayaan Intelektual.
-          </p>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+      </Head>
+
+      <div className="flex flex-col bg-sky-500">
+        <div className="flex flex-col lg:flex-row-reverse">
+          <div data-aos="fade-left" className="flex w-full">
+            <Image
+              className="object-cover max-h-screen"
+              src={konversi}
+              alt="konversi"
+            />
+          </div>
+
+          <div className="text-white text-justify bg-sky-500 p-10 md:p-20 lg:w-4/5">
+            <div data-aos="fade-right">
+              <div className="flex flex-row items-center lg:items-start">
+                <h1 className="text-3xl md:text-4xl font-bold text-white">
+                  About Us
+                  <div className="w-35 mt-1 h-1 bg-white" />
+                </h1>
+              </div>
+              <p className="mt-5">
+                Torsi EV berperan dalam mendukung terciptanya ekosistem Electric
+                Vehicle, dengan melakukan kegiatan yang berkaitan tidak terbatas
+                pada konversi, produksi, redesain, serta pembuatan perangkat
+                pendukung lainnya seperti charging station dan pembangunan
+                aplikasi pendukung. Kegiatan tersebut diwujudkan melalui
+                penelitian, diseminasi hasil penelitian kegiatan pengabdian
+                kepada masyarakat dan pengajaran, publikasi serta pendaftaran
+                Hak Atas Kekayaan Intelektual. <br /> <br />
+                Kegiatan tersebut diwujudkan melalui penelitian, diseminasi
+                hasil penelitian kegiatan pengabdian kepada masyarakat dan
+                pengajaran, publikasi serta pendaftaran Hak Atas Kekayaan
+                Intelektual.
+              </p>
+              <button className="items-center btn btn-sm w-32 h-10 mt-5 bg-transparent border-2 border-white text-white hover:bg-sky-600 hover:text-white hover:border-none">
+                See More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <button className="btn btn-sm w-32 h-10 mt-5 bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white hover:border-none">
-          See More
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+    </>
   );
 }

@@ -24,8 +24,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
           isScrolled
-            ? "bg-white text-black shadow-lg"
-            : "navbar-layer bg-white bg-opacity-50 text-black"
+            ? "bg-white text-black shadow-lg font-normal"
+            : "navbar-layer bg-none text-white font-normal"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
@@ -46,7 +46,7 @@ export default function Navbar() {
               className="flex items-start gap-2 text-lg font-semibold"
               prefetch={false}
             >
-              <Image className="w-24 md:w-32" src={logoTorsi} alt="logo" />
+              <Image className="w-32 md:w-40" src={logoTorsi} alt="logo" />
               <span className="sr-only">Torsi EV</span>
             </Link>
           </div>
@@ -55,50 +55,52 @@ export default function Navbar() {
               isMenuOpen ? "block" : "hidden"
             }`}
           >
-            <Link href="/" className="font-bold" prefetch={false}>
+            <Link href="/" className="text-lg hover:text-sky-500" prefetch={false}>
               Home
             </Link>
             <Link
               href="/about"
-              className="text-muted-foreground"
+              className="text-muted-foreground text-lg hover:text-sky-500"
               prefetch={false}
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-muted-foreground"
+              className="text-muted-foreground text-lg"
               prefetch={false}
             >
               Services
             </Link>
-            <Link href="#" className="text-muted-foreground" prefetch={false}>
+            <Link href="#" className="text-muted-foreground text-lg" prefetch={false}>
               Contact
             </Link>
           </nav>
+
+          {/* Tampilan large */}
           <div className="navbar-center">
-            <nav className="hidden gap-0 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-              <Link href="/" className="font-bold" prefetch={false}>
-                Home
+            <nav className="hidden text-lg md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-16">
+              <Link href="/" className=" text-lg hover:text-sky-500" prefetch={false}>
+                HOME
               </Link>
-              <Link href="#" className="text-muted-foreground" prefetch={false}>
-                About
+              <Link href="#" className="text-muted-foreground text-lg hover:text-sky-500" prefetch={false}>
+                ABOUT
               </Link>
               <Link
                 href="/services"
-                className="text-muted-foreground"
+                className="text-muted-foreground text-lg"
                 prefetch={false}
               >
-                Services
+                SERVICES
               </Link>
-              <Link href="#" className="text-muted-foreground" prefetch={false}>
-                Contact
+              <Link href="#" className="text-muted-foreground text-lg" prefetch={false}>
+                CONTACT
               </Link>
             </nav>
           </div>
-          <button className="btn bg-sky-500 border-none text-white hover:bg-sky-600 hover:border-none">
+          {/* <button className="btn bg-transparent border-white border-[3px] text-white font-bold hover:bg-white hover:border-transparent hover:text-black hover:font-bold">
             Get Started
-          </button>
+          </button> */}
         </div>
       </header>
       <section></section>
