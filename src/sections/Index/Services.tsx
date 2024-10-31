@@ -1,38 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import charging from "@/images/charging.png";
 import left from "@/images/left-1.svg";
 import right from "@/images/right-1.svg";
 import ice from "@/images/Str-4.png";
 import stroom from "@/images/Str-1.png";
-import Head from "next/head";
-
-declare global {
-  interface Window {
-    AOS: any;
-  }
-}
+import Script from "next/script";
 
 export default function Services() {
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.AOS) {
-      window.AOS.init({
-        duration: 1000,
-        once: false,
-      });
-    }
-  }, []);
-
   return (
     <>
-      <Head>
-        {/* Tambahkan CSS dan JavaScript AOS dari CDN */}
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-      </Head>
+      <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
 
       <div className="container mx-auto max-w-screen-xl my-auto px-4 md:mt-0">
         <div

@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Head from "next/head";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import volta from "@/images/volta-light.png";
@@ -8,33 +7,12 @@ import telyu from "@/images/telyu.png";
 import abe from "@/images/ABELogoWebsiteTransparent.png";
 import left from "@/images/left-1.svg";
 import right from "@/images/right-1.svg";
-
-declare global {
-  interface Window {
-    AOS: any;
-  }
-}
+import Script from "next/script";
 
 export default function Partner() {
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.AOS) {
-      window.AOS.init({
-        duration: 1000,
-        once: false,
-      });
-    }
-  }, []);
-
   return (
     <>
-      <Head>
-        {/* Tambahkan CSS dan JavaScript AOS dari CDN */}
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-      </Head>
+      <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
 
       <section className="mt-5">
         <div className="grid items-center py-4 justify-center text-center">

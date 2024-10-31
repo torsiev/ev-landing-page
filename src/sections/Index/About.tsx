@@ -1,34 +1,25 @@
 import Image from "next/image";
 import konversi from "@/images/konversi.png";
-import React, { useEffect } from "react";
-import Head from "next/head";
-
-declare global {
-  interface Window {
-    AOS: any;
-  }
-}
+import React, {useEffect} from "react";
+import Script from "next/script";
 
 export default function About() {
   useEffect(() => {
     if (typeof window !== "undefined" && window.AOS) {
-      window.AOS.init({
-        duration: 900,
-        once: false,
-      });
+      window.AOS.init({ duration: 1100 });
     }
   }, []);
 
   return (
     <>
-      <Head>
-        {/* Tambahkan CSS dan JavaScript AOS dari CDN */}
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-      </Head>
+      <Script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+        onLoad={() => {
+          if (typeof window !== "undefined" && window.AOS) {
+            window.AOS.init({duration:1100});
+          }
+        }}
+      />
 
       <div className="flex flex-col bg-sky-500">
         <div className="flex flex-col lg:flex-row-reverse">
