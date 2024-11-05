@@ -14,6 +14,7 @@ export default function Partner() {
     <>
       <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
 
+      <div className="bg-purple-500 w-full">
       <section className="mt-5">
         <div className="grid items-center py-4 justify-center text-center">
           <div
@@ -50,6 +51,7 @@ export default function Partner() {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }

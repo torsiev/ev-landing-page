@@ -5,11 +5,23 @@ import items1 from "@/images/conversion-items1.png";
 import items2 from "@/images/conversion-items2.png";
 import items3 from "@/images/conversion-items3.png";
 import items4 from "@/images/cs-items4.png";
+import bglayer from "@/images/bg-layer.png"
 
-export default function Service() {
+export default function Conversion() {
   return (
     <div className="flex flex-col lg:flex-col justify-center">
-      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center">
+  
+    <div className="absolute ">
+      <Image
+        src={bglayer}
+        alt="Background Layer"
+        layout=""
+        className="translate-x-[64rem] -translate-y-28 center"
+      />
+    </div>
+
+    <div className="flex flex-col lg:flex-col justify-center">
+      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center z-50">
         <div className="">
           <Image className="w-56 mt-8 lg:mt-0" src={conversion} alt="konversi" />
         </div>
@@ -73,7 +85,7 @@ export default function Service() {
           <div className="absolute inset-y-1/2 left-44 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
             <a
               href="#convertion-item1"
-              className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-100 text-sky-500"
+              className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +107,7 @@ export default function Service() {
           <div className="absolute inset-y-1/2 right-44 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
             <a
               href="#convertion-item4"
-              className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-100 text-sky-500"
+              className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +128,7 @@ export default function Service() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

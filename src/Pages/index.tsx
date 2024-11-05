@@ -6,6 +6,12 @@ import About from "@/sections/Index/About";
 import Services from "@/sections/Index/Services";
 import Contact from "@/sections/Index/Contact";
 
+declare global {
+  interface Window {
+    AOS: any;
+  }
+}
+
 export default function Home() {
   return (
     <DefaultLayout>

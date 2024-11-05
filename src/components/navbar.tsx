@@ -55,7 +55,11 @@ export default function Navbar() {
               isMenuOpen ? "block" : "hidden"
             }`}
           >
-            <Link href="/" className="text-lg hover:text-sky-500" prefetch={false}>
+            <Link
+              href="/"
+              className="text-lg hover:text-sky-500"
+              prefetch={false}
+            >
               Home
             </Link>
             <Link
@@ -72,7 +76,18 @@ export default function Navbar() {
             >
               Services
             </Link>
-            <Link href="#" className="text-muted-foreground text-lg" prefetch={false}>
+            <Link
+              href="/partnership"
+              className="text-muted-foreground text-lg"
+              prefetch={false}
+            >
+              Partner
+            </Link>
+            <Link
+              href="/contact"
+              className="text-muted-foreground text-lg"
+              prefetch={false}
+            >
               Contact
             </Link>
           </nav>
@@ -80,10 +95,18 @@ export default function Navbar() {
           {/* Tampilan large */}
           <div className="navbar-center">
             <nav className="hidden text-lg md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-16">
-              <Link href="/" className=" text-lg hover:text-sky-500" prefetch={false}>
+              <Link
+                href="/"
+                className=" text-lg hover:text-sky-500"
+                prefetch={false}
+              >
                 HOME
               </Link>
-              <Link href="#" className="text-muted-foreground text-lg hover:text-sky-500" prefetch={false}>
+              <Link
+                href="/about"
+                className="text-muted-foreground text-lg hover:text-sky-500"
+                prefetch={false}
+              >
                 ABOUT
               </Link>
               <Link
@@ -93,7 +116,18 @@ export default function Navbar() {
               >
                 SERVICES
               </Link>
-              <Link href="#" className="text-muted-foreground text-lg hover:text-sky-500" prefetch={false}>
+              <Link
+                href="/partnership"
+                className="text-muted-foreground text-lg hover:text-sky-500"
+                prefetch={false}
+              >
+                PARTNER
+              </Link>
+              <Link
+                href="/contact"
+                className="text-muted-foreground text-lg hover:text-sky-500"
+                prefetch={false}
+              >
                 CONTACT
               </Link>
             </nav>
