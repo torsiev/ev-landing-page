@@ -21,24 +21,24 @@ export default function Description() {
         }}
       />
 
-      <div className="flex flex-col">
-        <div className="flex flex-col lg:flex-row-reverse max-w-screen-xl">
-          <div data-aos="fade-left" className="flex w-full h-1/2 place-content-center mt-32">
+<div className="flex flex-col bg-sky-500">
+        <div className="flex flex-col lg:flex-row-reverse">
+          <div data-aos="fade-left" className="flex w-full">
             <Image
-              className="object-cover rounded-md"
+              className="object-cover max-h-screen"
               src={konversi}
               alt="konversi"
             />
           </div>
-          <div className="text-black text-justify p-10 md:p-20 lg:w-4/5">
+          <div className="text-white text-justify bg-sky-500 p-10 md:p-20 lg:w-4/5">
             <div data-aos="fade-right">
               <div className="flex flex-row items-center lg:items-start">
-                <h1 className="text-3xl md:text-4xl font-bold">
+                <h1 className="text-3xl md:text-4xl font-bold text-white">
                   About Us
-                  <div className="w-35 mt-1 h-1 bg-black" />
+                  <div className="w-35 mt-1 h-1 bg-white" />
                 </h1>
               </div>
-              <p className="mt-5 text-black">
+              <p className="mt-5">
                 Torsi EV berperan dalam mendukung terciptanya ekosistem Electric
                 Vehicle, dengan melakukan kegiatan yang berkaitan tidak terbatas
                 pada konversi, produksi, redesain, serta pembuatan perangkat

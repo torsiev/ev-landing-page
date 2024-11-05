@@ -26,15 +26,16 @@ export default function Charging() {
         }}
       />
 
-      <div className="flex flex-col lg:flex-col justify-center">
-        <div className="absolute ">
+      <div className="flex flex-col lg:flex-col justify-center overflow-x-hidden">
+
+        {/* <div className="absolute">
           <Image
             src={bglayer}
             alt="Background Layer"
             layout=""
             className="-translate-x-[36rem] center"
           />
-        </div>
+        </div> */}
 
         <div className="flex flex-col lg:flex-col justify-center z-20">
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-16 justify-center">
@@ -97,7 +98,7 @@ export default function Charging() {
                   />
                 </div>
               </div>
-              Tombol Navigasi Prev dan Next di Luar Carousel
+         
               <div className="absolute inset-y-1/2 left-44 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
                 <a
                   href="#item1"

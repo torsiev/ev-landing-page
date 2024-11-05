@@ -9,19 +9,19 @@ import bglayer from "@/images/bg-layer.png"
 
 export default function Conversion() {
   return (
-    <div className="flex flex-col lg:flex-col justify-center">
+    <div className="flex flex-col lg:flex-col justify-center overflow-x-hidden max-w-full">
   
-    <div className="absolute ">
+    {/* <div className="absolute">
       <Image
         src={bglayer}
         alt="Background Layer"
         layout=""
-        className="translate-x-[64rem] -translate-y-28 center"
+        className="translate-x-[64rem] center"
       />
-    </div>
+    </div> */}
 
     <div className="flex flex-col lg:flex-col justify-center">
-      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center z-50">
+      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center">
         <div className="">
           <Image className="w-56 mt-8 lg:mt-0" src={conversion} alt="konversi" />
         </div>
@@ -81,7 +81,7 @@ export default function Conversion() {
             </div>
           </div>
 
-          {/* Tombol Navigasi Prev dan Next di Luar Carousel */}
+         
           <div className="absolute inset-y-1/2 left-44 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
             <a
               href="#convertion-item1"

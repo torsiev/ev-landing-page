@@ -25,7 +25,8 @@ export default function Gallery() {
       />
 
       <div className="flex flex-col lg:flex-row justify-center items-center relative">
-        <div className="max-w-screen-xl mb-10 lg:mb-5 lg:mt-5">
+        <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
+          <div className="text-4xl font-bold text-sky-500 text-center mt-5">Highlights Activities</div>
           <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5">
             <div
               id="item1"
@@ -63,7 +64,7 @@ export default function Gallery() {
             </div>
           </div>
           {/* Tombol Navigasi Prev dan Next di Luar Carousel */}
-          <div className="absolute inset-y-1/2 -left-20 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
+          <div className="absolute inset-y-1/2 left-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
             <a
               href="#item1"
               className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"
@@ -85,7 +86,7 @@ export default function Gallery() {
               </svg>
             </a>
           </div>
-          <div className="absolute inset-y-1/2 -right-20 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
+          <div className="absolute inset-y-1/2 right-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible">
             <a
               href="#item4"
               className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"

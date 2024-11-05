@@ -10,14 +10,14 @@ import bglayer from "@/images/bg-layer.png"
 export default function Stroom() {
   return (
     <div className=" flex flex-col lg:flex-col justify-center">
-    <div className="absolute ">
+    {/* <div className="absolute ">
       <Image
         src={bglayer}
         alt="Background Layer"
         layout=""
         className="-translate-x-[36rem] center"
       />
-    </div>
+    </div> */}
     <div className="flex flex-col lg:flex-col justify-center">
       <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center z-20">
         <div className="">
@@ -40,7 +40,7 @@ export default function Stroom() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center relative">
+      <div className="flex flex-col lg:flex-row justify-center items-center relative overflow-x-hidden">
         <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
           <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5">
             <div
