@@ -7,9 +7,13 @@ import strItem3 from "@/images/str-items3.png";
 import strItem4 from "@/images/str-items4.png";
 import bglayer from "@/images/bg-layer.png"
 
-export default function Stroom() {
+interface StroomProps {
+  id?: string;
+}
+
+const Stroom: React.FC<StroomProps> = ({ id }) => {
   return (
-    <div className=" flex flex-col lg:flex-col justify-center">
+    <div id={id} className=" flex flex-col lg:flex-col justify-center">
     {/* <div className="absolute ">
       <Image
         src={bglayer}
@@ -130,3 +134,5 @@ export default function Stroom() {
     </div>
   );
 }
+
+export default Stroom;

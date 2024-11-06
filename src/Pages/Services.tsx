@@ -9,9 +9,9 @@ export default function Service() {
   return (
     <DefaultLayout>
       <Banner />
-      <Charging />
-      <Conversion />
-      <Stroom />
+      <Charging id="charging" />
+      <Conversion id="conversion" />
+      <Stroom id="stroom" />
     </DefaultLayout>
   );
 }

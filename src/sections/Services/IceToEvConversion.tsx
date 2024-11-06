@@ -7,9 +7,13 @@ import items3 from "@/images/conversion-items3.png";
 import items4 from "@/images/cs-items4.png";
 import bglayer from "@/images/bg-layer.png"
 
-export default function Conversion() {
+interface ConversionProps {
+  id?: string;
+}
+
+const Conversion: React.FC<ConversionProps> = ({ id }) => {
   return (
-    <div className="flex flex-col lg:flex-col justify-center overflow-x-hidden max-w-full">
+    <div id={id} className="flex flex-col lg:flex-col justify-center overflow-x-hidden max-w-full">
   
     {/* <div className="absolute">
       <Image
@@ -21,8 +25,8 @@ export default function Conversion() {
     </div> */}
 
     <div className="flex flex-col lg:flex-col justify-center">
-      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 justify-center">
-        <div className="" data-aos="zoom-in">
+      <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-10 justify-center">
+        <div className="lg:mt-10" data-aos="zoom-in">
           <Image className="w-56 mt-8 lg:mt-0" src={conversion} alt="konversi" />
         </div>
 
@@ -42,8 +46,8 @@ export default function Conversion() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center relative" data-aos="fade-down">
-        <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
+      <div className="flex flex-col lg:flex-row justify-center items-center relative mb-0" data-aos="fade-down">
+        <div className="max-w-screen-lg mb-10 lg:mt-5 lg:mb-0">
           <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5">
             <div
               id="convertion-item1"
@@ -132,3 +136,4 @@ export default function Conversion() {
     </div>
   );
 }
+export default Conversion;

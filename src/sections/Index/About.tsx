@@ -2,6 +2,7 @@ import Image from "next/image";
 import konversi from "@/images/konversi.png";
 import React, {useEffect} from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 export default function About() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function About() {
                 pengajaran, publikasi serta pendaftaran Hak Atas Kekayaan
                 Intelektual.
               </p>
+              <Link href="/about">
               <button className="items-center btn btn-sm w-32 h-10 mt-5 bg-transparent border-2 border-white text-white hover:bg-sky-600 hover:text-white hover:border-none">
                 See More
                 <svg
@@ -69,6 +71,7 @@ export default function About() {
                   />
                 </svg>
               </button>
+              </Link>
             </div>
           </div>
         </div>
