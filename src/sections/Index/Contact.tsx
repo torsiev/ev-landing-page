@@ -47,9 +47,9 @@ export default function Contact() {
                       </svg>
                     </button>
                     <div className="flex flex-col">
-                      <div className="font-bold">Alamat</div>
+                      <div className="font-semibold text-lg">Location</div>
                       <div className="text-slate-500">
-                        Jl. Telekomunikasi No. 1
+                      Selaru Building, Faculty of Applied Science 1st Floor, COE Smart EV 
                       </div>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                     </svg>
                   </button>
                   <div className="flex flex-col">
-                    <div className="font-bold">Telepon</div>
+                    <div className="font-semibold text-lg">Call Us</div>
                     <div className="text-slate-500">+62 234 5678 9876</div>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                     </svg>
                   </button>
                   <div className="flex flex-col">
-                    <div className="font-bold">Email</div>
+                    <div className="font-semibold text-lg">Email Us</div>
                     <div className="text-slate-500">info@example.com</div>
                   </div>
                 </div>

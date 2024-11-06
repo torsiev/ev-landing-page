@@ -23,16 +23,15 @@ export default function Footer() {
           </aside>
           <nav className="flex flex-col gap-2">
             <h6 className="footer-title">Services</h6>
-            <a className="link link-hover">Charging Station</a>
-            <a className="link link-hover">ICE to EV Conversion</a>
-            <a className="link link-hover">STROOM! - Electric Vehicle</a>
+            <a className="link link-hover" href="/services#charging">Charging Station</a>
+            <a className="link link-hover" href="/services#conversion">ICE to EV Conversion</a>
+            <a className="link link-hover" href="/services#stroom">STROOM! - Electric Vehicle</a>
           </nav>
           <nav className="flex flex-col gap-2">
             <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About</a>
-            <a className="link link-hover">Partner</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Article</a>
+            <a className="link link-hover" href="/about">About</a>
+            <a className="link link-hover" href="/partnership">Partner</a>
+            <a className="link link-hover" href="/contact">Contact</a>
           </nav>
           <nav>
             <h6 className="footer-title">Social</h6>

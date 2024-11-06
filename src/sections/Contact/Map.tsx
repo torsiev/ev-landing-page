@@ -46,9 +46,9 @@ export default function Map() {
                       </svg>
                     </button>
                     <div className="flex flex-col">
-                      <div className="font-bold">Alamat</div>
+                      <div className="font-semibold text-lg">Location</div>
                       <div className="text-slate-500">
-                        Jl. Telekomunikasi No. 1
+                      Selaru Building, Faculty of Applied Science 1st Floor, COE Smart EV
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function Map() {
                     </svg>
                   </button>
                   <div className="flex flex-col">
-                    <div className="font-bold">Telepon</div>
+                    <div className="font-semibold text-lg">Call Us</div>
                     <div className="text-slate-500">+62 234 5678 9876</div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Map() {
                     </svg>
                   </button>
                   <div className="flex flex-col">
-                    <div className="font-bold">Email</div>
+                    <div className="font-semibold text-lg">Email Us</div>
                     <div className="text-slate-500">info@example.com</div>
                   </div>
                 </div>
@@ -125,14 +125,13 @@ export default function Map() {
         </div>
 
         <div className="mt-10" data-aos="zoom-in">
-          <p className="font-bold text-center text-sky-500 text-3xl">
+          <p className="font-bold text-center text-sky-500 text-3xl mb-3">
             Join our social media community today!
           </p>
         </div>
 
         <section className="" data-aos="zoom-in" data-aos-duration={1300}>
-          <div className="grid items-center py-4 justify-center text-center">
-            <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5">
+            <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5 w-full">
               <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50">
                 <figure className="p-5">
                   <div className="flex flex-row items-start">
@@ -151,8 +150,8 @@ export default function Map() {
                       </svg>
                     </button>
                     <div className="flex flex-col text-start">
-                      <div className="font-bold">LinkedIn</div>
-                      <div className="text-slate-500">info@example.com</div>
+                      <div className="font-semibold text-lg">LinkedIn</div>
+                      <div className="text-slate-500">@coe.smartev</div>
                     </div>
                   </div>
                 </figure>
@@ -175,8 +174,8 @@ export default function Map() {
                       </svg>
                     </button>
                     <div className="flex flex-col text-start">
-                      <div className="font-bold">Facebook</div>
-                      <div className="text-slate-500">info@example.com</div>
+                      <div className="font-semibold text-lg">Facebook</div>
+                      <div className="text-slate-500">@coe.smartev</div>
                     </div>
                   </div>
                 </figure>
@@ -200,14 +199,13 @@ export default function Map() {
                       </svg>
                     </button>
                     <div className="flex flex-col text-start">
-                      <div className="font-bold">Instagram</div>
-                      <div className="text-slate-500">info@example.com</div>
+                      <div className="font-semibold text-lg">Instagram</div>
+                      <div className="text-slate-500">@coe.smartev</div>
                     </div>
                   </div>
                 </figure>
               </div>
             </div>
-          </div>
         </section>
       </div>
     </>

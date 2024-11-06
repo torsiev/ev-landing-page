@@ -26,7 +26,7 @@ export default function Gallery() {
 
       <div className="flex flex-col lg:flex-row justify-center items-center relative">
         <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
-          <div className="text-4xl font-bold text-sky-500 text-center mt-5" data-aos="fade-down">Highlights Activities</div>
+          <div className="text-4xl font-bold text-sky-500 text-center mt-5" data-aos="zoom-in">Highlights Activities</div>
           <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5" data-aos="fade-down">
             <div
               id="item1"
