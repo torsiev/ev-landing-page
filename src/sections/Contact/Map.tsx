@@ -1,17 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Script from "next/script";
 
 export default function Map() {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.AOS) {
+      window.AOS.init({ duration: 1100 });
+    }
+  }, []);
+
   return (
     <>
-      <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
+      <Script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+        onLoad={() => {
+          if (typeof window !== "undefined" && window.AOS) {
+            window.AOS.init({ duration: 1100 });
+          }
+        }}
+      />
 
       <div className="container mx-auto max-w-screen-xl my-auto px-4 mb-12">
         {/* Wrapper untuk kartu Alamat, Telepon, dan Email */}
         <div className="flex flex-col lg:flex-row lg:gap-5 mt-12">
           <div className="flex flex-col lg:flex-col lg:gap-33 w-full md:w1/3">
             {/* Kartu Alamat */}
-            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
+            <div
+              className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
+              data-aos="fade-down"
+            >
               <a href="https://maps.app.goo.gl/o5rGZGF2Pwg75DuR6">
                 <figure className="p-5">
                   <div className="flex flex-row items-start">
@@ -41,7 +57,10 @@ export default function Map() {
             </div>
 
             {/* Kartu Telepon */}
-            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
+            <div
+            className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
+            data-aos="fade-down"
+            data-aos-duration={1400} >
               <figure className="p-5">
                 <div className="flex flex-row items-start">
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
@@ -66,7 +85,9 @@ export default function Map() {
             </div>
 
             {/* Kartu Email */}
-            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
+            <div
+            className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
+            data-aos="fade-down">
               <figure className="p-5">
                 <div className="flex flex-row items-start">
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
@@ -91,7 +112,7 @@ export default function Map() {
               </figure>
             </div>
           </div>
-          <div className="flex items-end">
+          <div className="flex items-end" data-aos="fade-down">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.304369662571!2d107.63004257481983!3d-6.973371868282246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9afad6fa06f%3A0xd4fc2f579a78668a!2sFakultas%20Ilmu%20Terapan%20Universitas%20Telkom!5e0!3m2!1sid!2sid!4v1730269657713!5m2!1sid!2sid"
               width="815"
@@ -103,13 +124,13 @@ export default function Map() {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10" data-aos="zoom-in">
           <p className="font-bold text-center text-sky-500 text-3xl">
             Join our social media community today!
           </p>
         </div>
 
-        <section className="">
+        <section className="" data-aos="zoom-in" data-aos-duration={1300}>
           <div className="grid items-center py-4 justify-center text-center">
             <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5">
               <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50">

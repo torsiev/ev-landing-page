@@ -31,14 +31,17 @@ export default function Description() {
 
       <div className="w-full">
         <div className="justify-items-center text-center mb-5">
-          <div className="text-sky-500 font-bold text-4xl mb-6">
+          <div
+            className="text-sky-500 font-bold text-4xl mb-6"
+            data-aos="fade-down"
+          >
             Collaboration in Action
           </div>
 
           <div className="flex flex-col gap-3  pr-3 pl-3 md:p-0">
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
                   <Image
                     src={pict1}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -51,7 +54,7 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
                   <Image
                     src={pict2}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -65,7 +68,7 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
                   <Image
                     src={pict3}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -83,7 +86,7 @@ export default function Description() {
 
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
                   <Image
                     src={pict4}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -96,7 +99,7 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
                   <Image
                     src={pict5}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -109,7 +112,7 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
                   <Image
                     src={pict6}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -127,7 +130,7 @@ export default function Description() {
 
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
                   <Image
                     src={pict7}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -135,12 +138,12 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Foto bersama jajaran Torsi EV, mahasiswa FIT dan
-                      mitra XXX - Jumat, 20 Oktober 2023
+                      Foto bersama jajaran Torsi EV, mahasiswa FIT dan mitra XXX
+                      - Jumat, 20 Oktober 2023
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
                   <Image
                     src={pict8}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -153,7 +156,7 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md">
+                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
                   <Image
                     src={pict9}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"

@@ -34,26 +34,26 @@ export default function Description() {
         <div className="grid items-center py-4 justify-center text-center">
           <div
             className="flex flex-row md:gap-10 justify-center mb-5 items-center"
-            data-aos=""
+            
           > 
           </div>
           <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5">
-            <div className="" data-aos="">
+            <div className="" data-aos="zoom-in-down" data-aos-duration={800} >
               <Link href="https://telkomuniversity.ac.id" target="_blank">
                 <Image className="w-56" src={telyu} alt="logotelyu" />
               </Link>
             </div>
-            <div className="" data-aos="">
+            <div className="" data-aos="zoom-in-down" data-aos-duration={1100}>
               <Link href="https://voltaindonesia.com" target="_blank">
                 <Image className="w-56" src={volta} alt="logovolta" />
               </Link>
             </div>
-            <div className="" data-aos="">
+            <div className="" data-aos="zoom-in-down" data-aos-duration={1400}>
               <Link href="https://digitalmultisinergy.co.id/" target="_blank">
                 <Image className="w-56" src={dms} alt="logodms" />
               </Link>
             </div>
-            <div className="" data-aos="">
+            <div className="" data-aos="zoom-in-down" data-aos-duration={1700}>
               <Link href="https://alphabetaengineering.id/" target="_blank">
                 <Image className="w-56" src={abe} alt="logoabe" />
               </Link>

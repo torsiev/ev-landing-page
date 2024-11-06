@@ -39,11 +39,11 @@ export default function Charging() {
 
         <div className="flex flex-col lg:flex-col justify-center z-20">
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-16 justify-center">
-            <div className="">
+            <div className="" data-aos="zoom-in">
               <Image className="w-56 mt-8 lg:mt-0" src={cs} alt="konversi" />
             </div>
 
-            <div className="flex flex-col justify-center text-black w-3/4 lg:w-1/2">
+            <div className="flex flex-col justify-center text-black w-3/4 lg:w-1/2" data-aos="fade-right">
               <span className="font-bold text-3xl mb-3">Charging Station</span>
               <p className="text-justify mb-10 lg:mb-0">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -60,7 +60,7 @@ export default function Charging() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-center items-center relative">
+          <div className="flex flex-col lg:flex-row justify-center items-center relative" data-aos="fade-down">
             <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
               <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5">
                 <div
