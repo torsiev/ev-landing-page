@@ -34,17 +34,8 @@ const Charging: React.FC<ChargingProps> = ({ id }) => {
         id={id}
         className="flex flex-col lg:flex-col justify-center overflow-x-hidden"
       >
-        {/* <div className="absolute">
-          <Image
-            src={bglayer}
-            alt="Background Layer"
-            layout=""
-            className="-translate-x-[36rem] center"
-          />
-        </div> */}
-
         <div className="flex flex-col lg:flex-col justify-center z-20">
-          <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-16 justify-center">
+          <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-12 justify-center">
             <div className="" data-aos="zoom-in">
               <Image className="w-56 mt-8 lg:mt-0" src={cs} alt="konversi" />
             </div>

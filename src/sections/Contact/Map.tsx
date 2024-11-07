@@ -48,7 +48,8 @@ export default function Map() {
                     <div className="flex flex-col">
                       <div className="font-semibold text-lg">Location</div>
                       <div className="text-slate-500">
-                      Selaru Building, Faculty of Applied Science 1st Floor, COE Smart EV
+                        Selaru Building, Faculty of Applied Science 1st Floor,
+                        COE Smart EV
                       </div>
                     </div>
                   </div>
@@ -58,9 +59,10 @@ export default function Map() {
 
             {/* Kartu Telepon */}
             <div
-            className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
-            data-aos="fade-down"
-            data-aos-duration={1400} >
+              className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
+              data-aos="fade-down"
+              data-aos-duration={1400}
+            >
               <figure className="p-5">
                 <div className="flex flex-row items-start">
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
@@ -86,8 +88,9 @@ export default function Map() {
 
             {/* Kartu Email */}
             <div
-            className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
-            data-aos="fade-down">
+              className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center"
+              data-aos="fade-down"
+            >
               <figure className="p-5">
                 <div className="flex flex-row items-start">
                   <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
@@ -131,81 +134,81 @@ export default function Map() {
         </div>
 
         <section className="" data-aos="zoom-in" data-aos-duration={1300}>
-            <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5 w-full">
-              <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50">
-                <figure className="p-5">
-                  <div className="flex flex-row items-start">
-                    <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="2em"
-                        height="2em"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect width="24" height="24" fill="none" />
-                        <path
-                          fill="currentColor"
-                          d="M17.303 2.25H6.697A4.447 4.447 0 0 0 2.25 6.697v10.606a4.447 4.447 0 0 0 4.447 4.447h10.606a4.447 4.447 0 0 0 4.447-4.447V6.697a4.447 4.447 0 0 0-4.447-4.447m-8.46 15.742a.4.4 0 0 1-.4.423h-1.78a.41.41 0 0 1-.4-.412V10.6a.4.4 0 0 1 .4-.411h1.78a.4.4 0 0 1 .4.411zM7.52 8.632a1.467 1.467 0 1 1 .022-2.935A1.467 1.467 0 0 1 7.52 8.63m10.817 9.35a.39.39 0 0 1-.378.388H16.08a.39.39 0 0 1-.378-.389v-3.424c0-.511.156-2.223-1.356-2.223c-1.179 0-1.412 1.2-1.457 1.734v3.991a.39.39 0 0 1-.378.39h-1.823a.39.39 0 0 1-.389-.39v-7.493a.39.39 0 0 1 .39-.378h1.822a.39.39 0 0 1 .39.378v.645a2.59 2.59 0 0 1 2.434-1.112c3.035 0 3.024 2.835 3.024 4.447z"
-                        />
-                      </svg>
-                    </button>
-                    <div className="flex flex-col text-start">
-                      <div className="font-semibold text-lg">LinkedIn</div>
-                      <div className="text-slate-500">@coe.smartev</div>
-                    </div>
+          <div className="flex flex-col items-center lg:flex-row justify-center gap-5 py-5 w-full">
+            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50">
+              <figure className="p-5">
+                <div className="flex flex-row items-start">
+                  <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="2em"
+                      height="2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect width="24" height="24" fill="none" />
+                      <path
+                        fill="currentColor"
+                        d="M17.303 2.25H6.697A4.447 4.447 0 0 0 2.25 6.697v10.606a4.447 4.447 0 0 0 4.447 4.447h10.606a4.447 4.447 0 0 0 4.447-4.447V6.697a4.447 4.447 0 0 0-4.447-4.447m-8.46 15.742a.4.4 0 0 1-.4.423h-1.78a.41.41 0 0 1-.4-.412V10.6a.4.4 0 0 1 .4-.411h1.78a.4.4 0 0 1 .4.411zM7.52 8.632a1.467 1.467 0 1 1 .022-2.935A1.467 1.467 0 0 1 7.52 8.63m10.817 9.35a.39.39 0 0 1-.378.388H16.08a.39.39 0 0 1-.378-.389v-3.424c0-.511.156-2.223-1.356-2.223c-1.179 0-1.412 1.2-1.457 1.734v3.991a.39.39 0 0 1-.378.39h-1.823a.39.39 0 0 1-.389-.39v-7.493a.39.39 0 0 1 .39-.378h1.822a.39.39 0 0 1 .39.378v.645a2.59 2.59 0 0 1 2.434-1.112c3.035 0 3.024 2.835 3.024 4.447z"
+                      />
+                    </svg>
+                  </button>
+                  <div className="flex flex-col text-start">
+                    <div className="font-semibold text-lg">LinkedIn</div>
+                    <div className="text-slate-500">@coe.smartev</div>
                   </div>
-                </figure>
-              </div>
-
-              <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
-                <figure className="p-5">
-                  <div className="flex flex-row items-start">
-                    <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1.08em"
-                        height="2em"
-                        viewBox="0 0 896 1664"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M895 12v264H738q-86 0-116 36t-30 108v189h293l-39 296H592v759H286V905H31V609h255V391q0-186 104-288.5T667 0q147 0 228 12"
-                        ></path>
-                      </svg>
-                    </button>
-                    <div className="flex flex-col text-start">
-                      <div className="font-semibold text-lg">Facebook</div>
-                      <div className="text-slate-500">@coe.smartev</div>
-                    </div>
-                  </div>
-                </figure>
-              </div>
-
-              <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
-                <figure className="p-5">
-                  <div className="flex flex-row items-start">
-                    <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="2em"
-                        height="2em"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect width="24" height="24" fill="none" />
-                        <path
-                          fill="currentColor"
-                          d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"
-                        />
-                      </svg>
-                    </button>
-                    <div className="flex flex-col text-start">
-                      <div className="font-semibold text-lg">Instagram</div>
-                      <div className="text-slate-500">@coe.smartev</div>
-                    </div>
-                  </div>
-                </figure>
-              </div>
+                </div>
+              </figure>
             </div>
+
+            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
+              <figure className="p-5">
+                <div className="flex flex-row items-start">
+                  <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.08em"
+                      height="2em"
+                      viewBox="0 0 896 1664"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M895 12v264H738q-86 0-116 36t-30 108v189h293l-39 296H592v759H286V905H31V609h255V391q0-186 104-288.5T667 0q147 0 228 12"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div className="flex flex-col text-start">
+                    <div className="font-semibold text-lg">Facebook</div>
+                    <div className="text-slate-500">@coe.smartev</div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+
+            <div className="card rounded-md bg-white w-[100%] h-1/3 shadow-md text-black mb-5 items-start hover:bg-slate-50 justify-center">
+              <figure className="p-5">
+                <div className="flex flex-row items-start">
+                  <button className="btn btn-circle mr-5 ml-5 bg-sky-500 border-none text-white hover:bg-sky-500 hover:border-none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="2em"
+                      height="2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect width="24" height="24" fill="none" />
+                      <path
+                        fill="currentColor"
+                        d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"
+                      />
+                    </svg>
+                  </button>
+                  <div className="flex flex-col text-start">
+                    <div className="font-semibold text-lg">Instagram</div>
+                    <div className="text-slate-500">@coe.smartev</div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
         </section>
       </div>
     </>

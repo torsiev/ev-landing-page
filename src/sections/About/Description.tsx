@@ -21,7 +21,7 @@ export default function Description() {
         }}
       />
 
-<div className="flex flex-col bg-sky-500">
+      <div className="flex flex-col bg-sky-500">
         <div className="flex flex-col lg:flex-row-reverse">
           <div data-aos="fade-left" className="flex w-full">
             <Image

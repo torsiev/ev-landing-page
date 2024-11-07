@@ -49,7 +49,8 @@ export default function Contact() {
                     <div className="flex flex-col">
                       <div className="font-semibold text-lg">Location</div>
                       <div className="text-slate-500">
-                      Selaru Building, Faculty of Applied Science 1st Floor, COE Smart EV 
+                        Selaru Building, Faculty of Applied Science 1st Floor,
+                        COE Smart EV
                       </div>
                     </div>
                   </div>

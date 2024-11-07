@@ -41,7 +41,11 @@ export default function Description() {
           <div className="flex flex-col gap-3  pr-3 pl-3 md:p-0">
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={800}
+                >
                   <Image
                     src={pict1}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -54,7 +58,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1100}
+                >
                   <Image
                     src={pict2}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -68,7 +76,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1300}
+                >
                   <Image
                     src={pict3}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -86,7 +98,11 @@ export default function Description() {
 
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={800}
+                >
                   <Image
                     src={pict4}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -99,7 +115,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1100}
+                >
                   <Image
                     src={pict5}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -112,7 +132,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1300}
+                >
                   <Image
                     src={pict6}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -130,7 +154,11 @@ export default function Description() {
 
             <div className="max-w-screen-xl justify-items-center">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={800}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={800}
+                >
                   <Image
                     src={pict7}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -143,7 +171,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1100}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1100}
+                >
                   <Image
                     src={pict8}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"
@@ -156,7 +188,11 @@ export default function Description() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-md" data-aos="fade-down" data-aos-duration={1300}>
+                <div
+                  className="relative group overflow-hidden rounded-md"
+                  data-aos="fade-down"
+                  data-aos-duration={1300}
+                >
                   <Image
                     src={pict9}
                     className="size-auto transform group-hover:scale-110 transition-transform duration-300 rounded-md"

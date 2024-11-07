@@ -26,8 +26,16 @@ export default function Gallery() {
 
       <div className="flex flex-col lg:flex-row justify-center items-center relative">
         <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
-          <div className="text-4xl font-bold text-sky-500 text-center mt-5" data-aos="zoom-in">Highlights Activities</div>
-          <div className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5" data-aos="fade-down">
+          <div
+            className="text-4xl font-bold text-sky-500 text-center mt-5"
+            data-aos="zoom-in"
+          >
+            Highlights Activities
+          </div>
+          <div
+            className="carousel carousel-center h-80 rounded-lg overflow-x-auto gap-x-5"
+            data-aos="fade-down"
+          >
             <div
               id="item1"
               className="carousel-item w-[90%] lg:w-[40%] ml-5 lg:ml-0"
@@ -64,7 +72,10 @@ export default function Gallery() {
             </div>
           </div>
           {/* Tombol Navigasi Prev dan Next di Luar Carousel */}
-          <div className="absolute inset-y-1/2 left-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible" data-aos="fade-down">
+          <div
+            className="absolute inset-y-1/2 left-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible"
+            data-aos="fade-down"
+          >
             <a
               href="#item1"
               className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"
@@ -86,7 +97,10 @@ export default function Gallery() {
               </svg>
             </a>
           </div>
-          <div className="absolute inset-y-1/2 right-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible" data-aos="fade-down">
+          <div
+            className="absolute inset-y-1/2 right-32 transform -translate-y-1/2 overflow-hidden lg:overflow-visible"
+            data-aos="fade-down"
+          >
             <a
               href="#item4"
               className="btn btn-circle bg-transparent border-none shadow-none hover:bg-sky-200 text-sky-500"

@@ -9,10 +9,10 @@ export default function Banner() {
       style={{ height: "400px" }}
     >
       <Image
-         className="object-cover w-full h-full"
-         src={banner}
-         alt="background"
-         fill
+        className="object-cover w-full h-full"
+        src={banner}
+        alt="background"
+        fill
       />
     </div>
   );

@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import logoTorsi from "@/images/logotorsiev.png";
+import logoTorsiWhite from "@/images/Asset 3.svg";
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Button } from "@mui/material";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -19,6 +17,7 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div>
       <header
@@ -28,154 +27,193 @@ export default function Navbar() {
             : "navbar-layer bg-none text-white font-normal"
         }`}
       >
-        <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
-          <div className="flex items-center">
-            <div className="flex flex-row place-items-start">
-              <Button
-                size="small"
-                className="rounded-full text-black md:hidden"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                onScroll={() => setIsScrolled}
-              >
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation</span>
-              </Button>
-            </div>
-            <Link
-              href="#"
-              className="flex items-start gap-2 text-lg font-semibold"
-              prefetch={false}
-            >
-              <Image className="w-32 md:w-40" src={logoTorsi} alt="logo" />
-              <span className="sr-only">Torsi EV</span>
-            </Link>
-          </div>
-          <nav
-            className={`flex flex-col gap-0 text-lg font-medium md:hidden ${
-              isMenuOpen ? "block" : "hidden"
-            }`}
-          >
-            <Link
-              href="/"
-              className="text-lg hover:text-sky-500"
-              prefetch={false}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="text-muted-foreground text-lg hover:text-sky-500"
-              prefetch={false}
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="text-muted-foreground text-lg"
-              prefetch={false}
-            >
-              Services
-            </Link>
-            <Link
-              href="/partnership"
-              className="text-muted-foreground text-lg"
-              prefetch={false}
-            >
-              Partner
-            </Link>
-            <Link
-              href="/contact"
-              className="text-muted-foreground text-lg"
-              prefetch={false}
-            >
-              Contact
-            </Link>
-          </nav>
+        <div className="navbar lg:pr-24 lg:pl-24">
+          <div className="flex-1 flex lg:justify-between">
+            {/* Logo Torsi dan Hamburger */}
+            <div className="navbar-start flex items-center">
+              {/* Menu Dropdown untuk Mobile */}
+              <div className="lg:hidden mr-2 hover:bg-transparent">
+                <div className="dropdown">
+                  <div tabIndex={0} role="button" className="btn btn-ghost">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content bg-white text-black rounded-sm z-[1] mt-3 w-52 p-2 shadow"
+                  >
+                    <li>
+                      <a
+                        href="/"
+                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                      >
+                        HOME
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/about"
+                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                      >
+                        ABOUT
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/services"
+                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                      >
+                        SERVICES
+                      </a>
+                      <ul className="p-2">
+                        <li>
+                          <a
+                            href="/services#charging"
+                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          >
+                            Charging Station
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="/services#conversion"
+                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          >
+                            ICE to EV Conversion
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="/services#stroom"
+                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          >
+                            Stroom!
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="/partnership"
+                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                      >
+                        PARTNER
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/contact"
+                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                      >
+                        CONTACT
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          {/* Tampilan large */}
-          <div className="navbar-center">
-            <nav className="hidden text-lg md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-16">
-              <Link
+              {/* Logo */}
+              <a
                 href="/"
-                className=" text-lg hover:text-sky-500"
-                prefetch={false}
+                className="btn btn-ghost text-xl hover:bg-transparent"
               >
-                HOME
-              </Link>
-              <Link
-                href="/about"
-                className="text-muted-foreground text-lg hover:text-sky-500"
-                prefetch={false}
-              >
-                ABOUT
-              </Link>
-              <Link
-                href="/services"
-                className="text-muted-foreground text-lg hover:text-sky-500"
-                prefetch={false}
-              >
-                SERVICES
-              </Link>
-              <Link
-                href="/partnership"
-                className="text-muted-foreground text-lg hover:text-sky-500"
-                prefetch={false}
-              >
-                PARTNER
-              </Link>
-              <Link
-                href="/contact"
-                className="text-muted-foreground text-lg hover:text-sky-500"
-                prefetch={false}
-              >
-                CONTACT
-              </Link>
-            </nav>
+                {isScrolled ? (
+                  <Image src={logoTorsi} alt="Logo" className="w-32 md:w-40" />
+                ) : (
+                  <Image
+                    src={logoTorsiWhite}
+                    alt="Logo"
+                    className="w-32 md:w-40"
+                  />
+                )}
+              </a>
+            </div>
+
+            {/* Menu Desktop */}
+            <div className="navbar-center hidden lg:flex active:bg-transparent">
+              <ul className="menu menu-horizontal">
+                <li>
+                  <a
+                    href="/"
+                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                  >
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                  >
+                    ABOUT
+                  </a>
+                </li>
+                <li>
+                  <div className="dropdown dropdown-hover dropdown-bottom text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent">
+                    <a href="/services" className="flex items-center">
+                      SERVICES
+                    </a>
+                    <ul className="dropdown-content menu w-64 p-2 bg-white rounded-sm shadow">
+                      <li>
+                        <a
+                          href="/services#charging"
+                          className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                        >
+                          Charging Station
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services#conversion"
+                          className="text-black hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                        >
+                          ICE to EV Conversion
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services#stroom"
+                          className="text-black hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                        >
+                          Stroom!
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href="/partnership"
+                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                  >
+                    PARTNER
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                  >
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          {/* <button className="btn bg-transparent border-white border-[3px] text-white font-bold hover:bg-white hover:border-transparent hover:text-black hover:font-bold">
-            Get Started
-          </button> */}
         </div>
       </header>
-      <section></section>
     </div>
-  );
-}
-
-function MenuIcon(props: any) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="size-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-      />
-    </svg>
-  );
-}
-
-function MountainIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   );
 }
