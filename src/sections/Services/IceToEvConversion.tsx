@@ -5,7 +5,9 @@ import items1 from "@/images/conversion-items1.png";
 import items2 from "@/images/conversion-items2.png";
 import items3 from "@/images/conversion-items3.png";
 import items4 from "@/images/cs-items4.png";
-import bglayer from "@/images/bg-layer.png";
+import cdc from "@/images/cdc.png";
+import otomi from "@/images/otomi.png";
+import brt from "@/images/brt.png";
 
 interface ConversionProps {
   id?: string;
@@ -31,20 +33,40 @@ const Conversion: React.FC<ConversionProps> = ({ id }) => {
             className="flex flex-col justify-center text-black w-3/4 lg:w-1/2"
             data-aos="fade-right"
           >
-            <span className="font-bold text-3xl mb-3">
-              ICE to EV Conversion
-            </span>
-            <p className="text-justify mb-10 lg:mb-0">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. 
-            </p>
+            <div className="flex items-center">
+              <span className="font-bold text-3xl mb-2 pr-3">
+                CDC Conversion & Workshop{" "}
+              </span>
+              <span className="font-semibold text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
+                Industry Grant
+              </span>
+            </div>
+            <div className="text-justify mb-10 lg:mb-0">
+              <span className="font-bold">CDC Conversion & Workshop</span> is a
+              conversion project funded by CDC Telkom. The project converted
+              five motorcycle based on Honda Vario. In this project, the swing
+              arm is redesigned and build from scratch. The battery compartment
+              is also moved below the baggage compartment for better stability
+              and accessibility. Controller and engine were tuned up on dynotest
+              for accuracy. The project also laid the foundation of the TorsiEV
+              conversion workshop.  <br />
+              <span className="font-bold">Project value: </span> IDR.450M <br />
+              <span className="font-bold">Project partners:</span> CDC Telkom,
+              Otomi Indonesia, BRT, Ko+Lab <br />
+              <div className="flex gap-5 items-center mt-5">
+                <div className="flex gap-5 items-center">
+                  <div>
+                    <Image src={cdc} className="w-20" alt="" />
+                  </div>
+                  <div>
+                    <Image src={otomi} className="w-28" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <Image src={brt} className="w-20" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

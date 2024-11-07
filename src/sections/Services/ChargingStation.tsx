@@ -5,8 +5,9 @@ import items1 from "@/images/cs-items1.png";
 import items3 from "@/images/cs-items2.png";
 import items2 from "@/images/cs-items3.png";
 import items4 from "@/images/cs-items4.png";
-import bglayer from "@/images/bg-layer.png";
 import Script from "next/script";
+import abe from "@/images/ABE-1.png";
+import baraya from "@/images/baraya.png";
 
 interface ChargingProps {
   id?: string;
@@ -44,19 +45,35 @@ const Charging: React.FC<ChargingProps> = ({ id }) => {
               className="flex flex-col justify-center text-black w-3/4 lg:w-1/2"
               data-aos="fade-right"
             >
-              <span className="font-bold text-3xl mb-3">Charging Station</span>
-              <p className="text-justify mb-10 lg:mb-0">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. 
-              </p>
+              <div className="flex items-center">
+                <span className="font-bold text-3xl mb-2 pr-3">
+                  Charging Station{" "} </span>
+                  <span className="font-semibold text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
+                    Kedaireka Grant
+                  </span>
+                
+              </div>
+
+              <div className="text-justify mb-10 lg:mb-0">
+                <span className="font-bold">EV Charging Station</span> is a
+                project funded by Kedaireka. The project includes 11kW and 22kW
+                type-2 charging stations. The later charging station is operated
+                in Telkom University Landmark Tower and is available to the
+                public. The project also set a milestone for charging station
+                application and integrated payment gateway research.
+                <br />
+                <span className="font-bold">Project value: </span>IDR.70M <br />
+                <span className="font-bold">Project partner:</span> Alpha Beta
+                Engineering, Baraya Telematika Nusantara
+                <div className="flex gap-5 items-center mt-5">
+                  <div>
+                    <Image src={abe} className="w-32" alt="" />
+                  </div>
+                  <div>
+                    <Image src={baraya} className="w-32" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

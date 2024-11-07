@@ -40,18 +40,14 @@ export default function About() {
                 </h1>
               </div>
               <p className="mt-5">
-                Torsi EV berperan dalam mendukung terciptanya ekosistem Electric
-                Vehicle, dengan melakukan kegiatan yang berkaitan tidak terbatas
-                pada konversi, produksi, redesain, serta pembuatan perangkat
-                pendukung lainnya seperti charging station dan pembangunan
-                aplikasi pendukung. Kegiatan tersebut diwujudkan melalui
-                penelitian, diseminasi hasil penelitian kegiatan pengabdian
-                kepada masyarakat dan pengajaran, publikasi serta pendaftaran
-                Hak Atas Kekayaan Intelektual. <br /> <br />
-                Kegiatan tersebut diwujudkan melalui penelitian, diseminasi
-                hasil penelitian kegiatan pengabdian kepada masyarakat dan
-                pengajaran, publikasi serta pendaftaran Hak Atas Kekayaan
-                Intelektual.
+                Torsi EV is crucial in supporting the establishment of an
+                Electric Vehicle ecosystem through activities encompassing, but
+                not limited to, conversion, production, redesign, and
+                development of supporting devices, such as charging stations and
+                supporting applications. These activities are realized through
+                research, dissemination of research findings via community
+                service and teaching, and publication and Intellectual Property
+                Rights registration.
               </p>
               <Link href="/about">
                 <button className="items-center btn btn-sm w-32 h-10 mt-5 bg-transparent border-2 border-white text-white hover:bg-sky-600 hover:text-white hover:border-none">

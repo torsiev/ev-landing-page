@@ -16,11 +16,11 @@ export default function Hero() {
           <h1 className="mb-3 text-2xl md:text-5xl font-bold text-white">
             Welcome to Torsi EV
           </h1>
-          <p className="mb-4 text-sm md:text-base lg:text-lg  text-white">
-            Kami berusaha memberikan pelayanan terbaik. <br />
-            Bergabung dengan kami dan nikmati pengalaman yang berbeda.
+          <p className="mb-4 text-sm md:text-base lg:text-lg italic  text-white">
+          Innovating Green Mobility,
+          Inspiring Future Generations
           </p>
-          <button className="btn rounded-md pl-9 pr-9 h-15 bg-transparent border-white border-[3px] text-white hover:bg-white hover:text-sky-500 hover:border-none">
+          <button className="btn rounded-md pl-9 pr-9 h-15 bg-transparent border-white border-[3px] text-white hover:bg-white hover:text-sky-500 hover:border-none text-lg">
             GET STARTED
           </button>
         </div>

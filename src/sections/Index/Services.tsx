@@ -36,11 +36,13 @@ export default function Services() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Charging Station</h2>
-              <p className="text-justify">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+              <p className="text-justify line-clamp-4">
+                <span className="font-bold">EV Charging Station</span> is a
+                project funded by Kedaireka. The project includes 11kW and 22kW
+                type-2 charging stations. The later charging station is operated
+                in Telkom University Landmark Tower and is available to the
+                public. The project also set a milestone for charging station
+                application and integrated payment gateway research.
               </p>
               <div className="card-actions justify-end">
                 <Link href="/services#charging">
@@ -76,11 +78,15 @@ export default function Services() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">ICE to EV Conversion</h2>
-              <p className="text-justify">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+              <p className="text-justify line-clamp-4">
+                <span className="font-bold">CDC Conversion & Workshop</span> is
+                a conversion project funded by CDC Telkom. The project converted
+                five motorcycle based on Honda Vario. In this project, the swing
+                arm is redesigned and build from scratch. The battery
+                compartment is also moved below the baggage compartment for
+                better stability and accessibility. Controller and engine were
+                tuned up on dynotest for accuracy. The project also laid the
+                foundation of the TorsiEV conversion workshop.
               </p>
               <div className="card-actions justify-end">
                 <Link href="/services#conversion">
@@ -115,11 +121,13 @@ export default function Services() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">STROOM! - Electric Vehicle</h2>
-              <p className="text-justify">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+              <p className="text-justify line-clamp-4">
+                <span className="font-bold">Stroom</span> is our first project
+                on an electric motorcycle. Stroom is based on Volta electric
+                motorcyle, and given upgraded bodywork. The project was led by
+                our team from the Faculty of Creative Industry in collaboration
+                with the Faculty of Applied Science. The project also upgrade
+                the instrument cluster and battery compartment.
               </p>
               <div className="card-actions justify-end">
                 <Link href="/services#stroom">

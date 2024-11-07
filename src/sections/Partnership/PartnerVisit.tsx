@@ -53,8 +53,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 rounded-md">
                     <p className="text-white text-center p-10">
-                      Uji coba penggunaan charging station Torsi EV - Jumat, 20
-                      Oktober 2023
+                      Torsi EV conducted a trial of its electric vehicle
+                      charging station on Friday, October 20, 2023.
                     </p>
                   </div>
                 </div>
@@ -70,9 +70,9 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Kunjungan mitra powerindo: Uji coba performa Stroom!
-                      dengan pemeriksaan respons throttle - Rabu, 04 Oktober
-                      2023
+                      Powerindo partner visit: Stroom! Performance trial with
+                      throttle response inspection on Wednesday, October 4,
+                      2023.
                     </p>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Kunjungan mitra powerindo: Kunjungan lokasi bengkel Torsi
-                      EV - Rabu, 04 Oktober 2023
+                      Powerindo partner visit: Torsi EV workshop site visit on
+                      Wednesday, October 4, 2023.
                     </p>
                   </div>
                 </div>
@@ -110,8 +110,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Foto bersama jajaran Torsi EV bersama mitra Powerindo -
-                      Rabu, 04 Oktober 2023
+                      Group photo of Torsi EV executives with Powerindo partners
+                      on Wednesday, October 4, 2023.
                     </p>
                   </div>
                 </div>
@@ -127,8 +127,9 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Suasana rapat diskusi kerja sama bersama mitra Powerindo -
-                      Rabu, 04 Oktober 2023
+                      The collaborative discussion meeting with Powerindo
+                      partners is in a productive atmosphere on Wednesday,
+                      October 4, 2023.
                     </p>
                   </div>
                 </div>
@@ -144,8 +145,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Penjelasan sistem kerja motor konversi Torsi EV kepada
-                      mitra Powerindo - Rabu, 04 Oktober 2023
+                      Overview of the Torsi EV conversion motor system presented
+                      to Powerindo partners on Wednesday, October 4, 2023
                     </p>
                   </div>
                 </div>
@@ -166,8 +167,9 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Foto bersama jajaran Torsi EV, mahasiswa FIT dan mitra XXX
-                      - Jumat, 20 Oktober 2023
+                      Group photo of Torsi EV executives, Faculty of Applied
+                      Science students, and partners on Friday, October 20,
+                      2023.
                     </p>
                   </div>
                 </div>
@@ -183,8 +185,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Pemasangan Charging Point di TULT bersama mitra XXX -
-                      Jumat, 20 Oktober 2023
+                      Charging Station installation at TULT in collaboration
+                      with partners on Friday, October 20, 2023.
                     </p>
                   </div>
                 </div>
@@ -200,8 +202,8 @@ export default function Description() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-md">
                     <p className="text-white text-center p-10">
-                      Perakitan komponen Charging Point di TULT bersama mitra
-                      XXX - Jumat, 20 Oktober 2023
+                      Charging Point component assembly at TULT in partnership
+                      with ... on Friday, October 20, 2023.
                     </p>
                   </div>
                 </div>

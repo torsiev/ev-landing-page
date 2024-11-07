@@ -6,6 +6,7 @@ import strItem2 from "@/images/str-items2.png";
 import strItem3 from "@/images/str-items3.png";
 import strItem4 from "@/images/str-items4.png";
 import bglayer from "@/images/bg-layer.png";
+import volta from "@/images/volta-1.png";
 
 interface StroomProps {
   id?: string;
@@ -24,20 +25,31 @@ const Stroom: React.FC<StroomProps> = ({ id }) => {
             className="flex flex-col justify-center text-black w-3/4 lg:w-1/2"
             data-aos="fade-right"
           >
-            <span className="font-bold text-3xl mb-3">
-              STROOM! - Electric Vehicle
-            </span>
-            <p className="text-justify mb-10 lg:mb-0">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. 
-            </p>
+            <div className="flex items-center">
+              <span className="font-bold text-3xl mb-2 pr-3">
+                STROOM!{" "}
+              </span>
+              <span className="font-semibold text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
+                Internal Grant, Flagship Research
+              </span>
+            </div>
+
+            <div className="text-justify mb-10 lg:mb-0">
+              <span className="font-bold">Stroom</span> is our first project on
+              an electric motorcycle. Stroom is based on Volta electric
+              motorcyle, and given upgraded bodywork. The project was led by our
+              team from the Faculty of Creative Industry in collaboration with
+              the Faculty of Applied Science. The project also upgrade the
+              instrument cluster and battery compartment. <br />
+              <span className="font-bold">Project value: </span>IDR.70M <br />
+              <span className="font-bold">Project partner: </span> PT. Volta
+              Indonesia Semesta
+            </div>
+            <div>
+              <div>
+                <Image src={volta} className="w-44" alt=""></Image>
+              </div>
+            </div>
           </div>
         </div>
 
