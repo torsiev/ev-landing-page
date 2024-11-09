@@ -46,12 +46,12 @@ const Charging: React.FC<ChargingProps> = ({ id }) => {
               data-aos="fade-right"
             >
               <div className="flex items-center">
-                <span className="font-bold text-3xl mb-2 pr-3">
-                  Charging Station{" "} </span>
-                  <span className="font-semibold text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
-                    Kedaireka Grant
-                  </span>
-                
+                <span className="font-bold text-xl md:text-2xl lg:text-3xl mb-2 pr-3">
+                  Charging Station{" "}
+                </span>
+                <span className="font-semibold text-xs lg:text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
+                  Kedaireka Grant
+                </span>
               </div>
 
               <div className="text-justify mb-10 lg:mb-0">

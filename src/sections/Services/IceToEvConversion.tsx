@@ -34,10 +34,10 @@ const Conversion: React.FC<ConversionProps> = ({ id }) => {
             data-aos="fade-right"
           >
             <div className="flex items-center">
-              <span className="font-bold text-3xl mb-2 pr-3">
+              <span className="font-bold text-xl md:text-2xl lg:text-3xl mb-2 pr-3">
                 CDC Conversion & Workshop{" "}
               </span>
-              <span className="font-semibold text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
+              <span className="font-semibold text-xs lg:text-sm bg-blue-200 rounded-md pt-1 pb-1 pr-3 pl-3">
                 Industry Grant
               </span>
             </div>

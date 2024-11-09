@@ -3,8 +3,15 @@ import Image from "next/image";
 import logoTorsi from "@/images/logotorsiev.png";
 import logoTorsiWhite from "@/images/Asset 3.svg";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const router = useRouter();
+  const isActive = (path: any) =>
+    router.pathname === path
+      ? "font-semibold text-sky-500 text-[17px]"
+      : "hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent text-[17px]";
+
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -52,28 +59,22 @@ export default function Navbar() {
                   </div>
                   <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-white text-black rounded-sm z-[1] mt-3 w-52 p-2 shadow"
+                    className="menu menu-sm dropdown-content bg-white text-black rounded-md z-[1] mt-3 w-52 p-2 shadow"
                   >
                     <li>
-                      <a
-                        href="/"
-                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                      >
+                      <a href="/" className={`${isActive("/")}`}>
                         HOME
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="/about"
-                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                      >
+                      <a href="/about" className={`${isActive("/about")}`}>
                         ABOUT
                       </a>
                     </li>
                     <li>
                       <a
                         href="/services"
-                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                        className={`${isActive("/services")}`}
                       >
                         SERVICES
                       </a>
@@ -81,7 +82,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/services#charging"
-                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                            className={`${isActive("/services#charging")}`}
                           >
                             Charging Station
                           </a>
@@ -89,7 +90,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/services#conversion"
-                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                            className={`${isActive("/services#conversion")}`}
                           >
                             ICE to EV Conversion
                           </a>
@@ -97,7 +98,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/services#stroom"
-                            className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                            className={`${isActive("/services#stroom")}`}
                           >
                             Stroom!
                           </a>
@@ -107,16 +108,13 @@ export default function Navbar() {
                     <li>
                       <a
                         href="/partnership"
-                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                        className={`${isActive("/partnership")}`}
                       >
                         PARTNER
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="/contact"
-                        className="hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                      >
+                      <a href="/contact" className={`${isActive("/contact")}`}>
                         CONTACT
                       </a>
                     </li>
@@ -145,31 +143,30 @@ export default function Navbar() {
             <div className="navbar-center hidden lg:flex active:bg-transparent">
               <ul className="menu menu-horizontal">
                 <li>
-                  <a
-                    href="/"
-                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                  >
+                  <a href="/" className={`${isActive("/")}`}>
                     HOME
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/about"
-                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                  >
+                  <a href="/about" className={`${isActive("/about")}`}>
                     ABOUT
                   </a>
                 </li>
                 <li>
                   <div className="dropdown dropdown-hover dropdown-bottom text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent">
-                    <a href="/services" className="flex items-center">
+                    <a
+                      href="/services"
+                      className={`${isActive("/services")} flex items-center`}
+                    >
                       SERVICES
                     </a>
-                    <ul className="dropdown-content menu w-64 p-2 bg-white rounded-sm shadow">
+                    <ul className="dropdown-content menu w-64 p-2 bg-white rounded-md shadow">
                       <li>
                         <a
                           href="/services#charging"
-                          className="text-black  hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          className={`${isActive(
+                            "/services#charging"
+                          )} text-black`}
                         >
                           Charging Station
                         </a>
@@ -177,7 +174,9 @@ export default function Navbar() {
                       <li>
                         <a
                           href="/services#conversion"
-                          className="text-black hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          className={`${isActive(
+                            "/services#conversion"
+                          )} text-black`}
                         >
                           ICE to EV Conversion
                         </a>
@@ -185,7 +184,9 @@ export default function Navbar() {
                       <li>
                         <a
                           href="/services#stroom"
-                          className="text-black hover:text-sky-500 hover:bg-slate-50 tracking-wider active:bg-transparent !bg-transparent"
+                          className={`${isActive(
+                            "/services#stroom"
+                          )} text-black`}
                         >
                           Stroom!
                         </a>
@@ -196,16 +197,13 @@ export default function Navbar() {
                 <li>
                   <a
                     href="/partnership"
-                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
+                    className={`${isActive("/partnership")}`}
                   >
                     PARTNER
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/contact"
-                    className="text-[17px] hover:text-sky-500 hover:bg-transparent active:bg-transparent !bg-transparent"
-                  >
+                  <a href="/contact" className={`${isActive("/contact")}`}>
                     CONTACT
                   </a>
                 </li>
