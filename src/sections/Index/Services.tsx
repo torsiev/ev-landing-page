@@ -19,7 +19,7 @@ export default function Services() {
           data-aos="zoom-in"
         >
           <Image className="h-2 md:h-10 mt-5" src={left} alt="line-left" />
-          <h1 className="text-3xl md:text-4xl mt-5 font-bold text-sky-500 text-center">
+          <h1 className="text-3xl lg:text-4xl mt-5 font-bold text-sky-500 text-center">
             Services
           </h1>
           <Image className="h-2 md:h-10 mt-5" src={right} alt="line-right" />

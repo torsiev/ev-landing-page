@@ -32,7 +32,7 @@ export default function Description() {
       <div className="w-full">
         <div className="justify-items-center text-center mb-5">
           <div
-            className="text-sky-500 font-bold text-4xl mb-6"
+            className="text-sky-500 font-bold text-3xl lg:text-4xl mb-6"
             data-aos="fade-down"
           >
             Collaboration in Action

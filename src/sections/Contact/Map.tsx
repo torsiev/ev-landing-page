@@ -128,7 +128,7 @@ export default function Map() {
         </div>
 
         <div className="mt-10" data-aos="zoom-in">
-          <p className="font-bold text-center text-sky-500 text-3xl mb-3">
+          <p className="font-bold text-center text-sky-500 text-3xl lg:text-4xl mb-3">
             Join our social media community today!
           </p>
         </div>

@@ -27,7 +27,7 @@ export default function Gallery() {
       <div className="flex flex-col lg:flex-row justify-center items-center relative">
         <div className="max-w-screen-lg mb-10 lg:mb-5 lg:mt-5">
           <div
-            className="text-4xl font-bold text-sky-500 text-center mt-5"
+            className="text-3xl lg:text-4xl font-bold text-sky-500 text-center mt-5"
             data-aos="zoom-in"
           >
             Highlights Activities

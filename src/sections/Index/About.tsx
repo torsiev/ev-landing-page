@@ -34,7 +34,7 @@ export default function About() {
           <div className="text-white text-justify bg-sky-500 p-10 md:p-20 lg:w-4/5">
             <div data-aos="fade-right">
               <div className="flex flex-row items-center lg:items-start">
-                <h1 className="text-3xl md:text-4xl font-bold text-white">
+                <h1 className="text-3xl lg:text-4xl font-bold text-white">
                   About Us
                   <div className="w-35 mt-1 h-1 bg-white" />
                 </h1>
