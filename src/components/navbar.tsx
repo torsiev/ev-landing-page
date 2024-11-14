@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logoTorsi from "@/images/logotorsiev.png";
-import logoTorsiWhite from "@/images/Asset 3.svg";
+import logoTorsiWhite from "@/images/logotorsiev-white.svg";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 

@@ -6,7 +6,7 @@ import items3 from "@/images/cs-items2.png";
 import items2 from "@/images/cs-items3.png";
 import items4 from "@/images/cs-items4.png";
 import Script from "next/script";
-import abe from "@/images/ABE-1.png";
+import abe from "@/images/ABELogoWebsiteTransparent.png";
 import baraya from "@/images/baraya.png";
 
 interface ChargingProps {
