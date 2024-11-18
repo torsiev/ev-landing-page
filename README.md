@@ -16,7 +16,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/pages` or `app/sections`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Docker Set Up
+First, make sure you have Docker installed in your system.
+
+#### 1. Build Docker Image:
+Open your terminal and run this command:
+```bash
+docker build -t <image-name>
+```
+
+#### 2. Run Docker
+``` bash
+docker run -d -p 3000:3000 <image-name>
+```
+
+#### 3. Open Project
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Docker Troubleshooting
+#### 1. Docker Log
+``` bash
+docker logs <container-id>
+```
+
+#### 2. List all the running containers
+```bash
+docker ps
+```
+
+#### 3. Stop a running Docker container
+``` bash
+docker stop <container-id>
+```
