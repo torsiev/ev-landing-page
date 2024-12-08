@@ -47,7 +47,7 @@ docker build -t <image-name>
 
 #### 2. Run Docker
 ``` bash
-docker run -d -p 3000:3000 <image-name>
+docker run -d -p 3000:3000 <image-name> .
 ```
 
 #### 3. Open Project
